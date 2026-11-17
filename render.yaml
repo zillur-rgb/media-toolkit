@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: media-toolkit
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/capabilities
+    autoDeploy: true

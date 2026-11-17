@@ -11,6 +11,16 @@ npm start          # http://localhost:4321
 
 Requirements (macOS/Homebrew): `ffmpeg`, `poppler` (pdftocairo/pdfinfo). Optional: `ghostscript` for EPS → PDF.
 
+## Deploy (Docker / Render)
+
+The `Dockerfile` bundles Node, Python, ffmpeg, poppler, Ghostscript, ImageMagick and libheif, so every tool works on Linux.
+
+```bash
+docker build -t media-toolkit . && docker run -p 4321:10000 media-toolkit
+```
+
+On [Render](https://render.com): **New → Blueprint**, pick this repo (`render.yaml` defines the service). Pushes to `main` redeploy automatically.
+
 ## Tools
 
 **Video** — Video to GIF / WebP / APNG / AVIF · Resize · Crop (drag to select) · Rotate & flip · Reverse · Loop / boomerang · Cut ·

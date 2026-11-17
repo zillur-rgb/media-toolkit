@@ -1,0 +1,9 @@
+.git
+node_modules
+storage
+instagram/frontend/node_modules
+instagram/frontend/dist
+instagram/backend/.venv
+instagram/backend/__pycache__
+.DS_Store
+.env
