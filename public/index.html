@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MediaKit — video & PDF tools</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%235b5bd6'/><path d='M11 9l12 7-12 7z' fill='white'/></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" data-link>
+      <span class="logo"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8"/><path d="M11 9l12 7-12 7z"/></svg></span>
+      <span>Media<b>Kit</b></span>
+    </a>
+    <nav class="cats">
+      <a href="/video/video-to-gif" data-link data-cat="video">Video tools</a>
+      <a href="/pdf/crop-pdf" data-link data-cat="pdf">PDF tools</a>
+      <a href="/instagram/">Instagram</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Show tools">☰ Tools</button>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main id="main"></main>
+  </div>
+  <footer class="foot">Files are processed on this server and deleted automatically after one hour.</footer>
+  <script src="/tools.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
